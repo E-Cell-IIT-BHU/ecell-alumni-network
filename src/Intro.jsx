@@ -8,27 +8,32 @@ function Intro() {
   return (
     <>
       <section className="container">
-        <div style={{ marginTop: "23%" }} className="even-column">
-        <div className="flow"><h1>IIT BHU Alumni Angel Network</h1>
-          <div style={{ padding: "3% 20%" }}>
-            <p>An initiative by IIT BHU Alumni and E-Cell IIT BHU</p>
-          </div>
 
-          <a href="#abt">
+      <div className="container">
+          <div className="even-column">
+            <div className="flow">
+              <h1>
+              IIT BHU Alumni Angel Network
+              </h1>
+              <p>
+              An initiative by IIT BHU Alumni and E-Cell IIT BHU
+              </p>
+              <a href="#abt" className="scroll">
             <img
-              style={{ width: "46px", height: "40px" }}
+              style={{textAlign:"center"}}
+
               src={img}
               alt="scroll-down-icon"
             ></img>
           </a>
-        </div></div>
-          
-        <div className="even-column">
-          <img
-            src={illustration}
-            className="illustration"
-            alt="illustration"
-          ></img>
+
+              
+            </div>
+            <div>
+              <img src={illustration} alt="" />
+            </div>
+          </div>
+
         </div>
       </section>
     </>

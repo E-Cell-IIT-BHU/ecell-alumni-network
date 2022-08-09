@@ -1,18 +1,19 @@
 import React from "react";
-import Grid from "./Grid";
 import "./App.css";
 import GridItem from "./gridItem";
 
 function Team(params) {
   return (
     <>
-      <h2 style={{textDecoration:"underline",textDecorationThickness:'2px',margin:'2% 0'}}>Meet the Team</h2>
+     {/* <hr style={{margin:"0% 20%"}}></hr> */}
+     <div >
+      <h2 style={{textDecoration:"none!important",margin:'2% 0',fontWeight:"600",textTransform:"uppercase"}} id="team" >Meet the Team</h2>
 
-      <div className="grid-container">
+      <div className="grid-container" >
         <h2 style={{textDecoration:"underline",textDecorationThickness:'2px'}}>Core Team</h2>
         <div className="sub-grid-container">
           <GridItem name="Nishant Shukla" />
-          <GridItem name="Amit Kumar Baheti" />
+          <GridItem name="Amit Kumar " />
           <GridItem name="Akshay Akash" />
           <GridItem name="Sparsh Agarwal" />
         </div>
@@ -30,6 +31,7 @@ function Team(params) {
 
           <GridItem name="Udayan Banerjee"/>
         </div>
+      </div>
       </div>
     </>
   );
