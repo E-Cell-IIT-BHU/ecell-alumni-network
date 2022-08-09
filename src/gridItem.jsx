@@ -18,4 +18,7 @@ function GridItem(props) {
 }
 
 export default GridItem;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b9ed5a1 (added changes)

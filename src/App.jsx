@@ -14,13 +14,18 @@ function App() {
     <div className="App">
     <Navigation />
     <Intro />
+
+    <div style={{textAlign:"center"}}>
+
     <About />
     <Grid />
     <Team />
     <ContactUs />
     <Form/>
     <Footer/>
+    
     <hr style={{margin:"2% 20%"}}></hr>
+    </div>
     </div>
   );
 }

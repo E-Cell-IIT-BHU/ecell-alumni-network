@@ -12,13 +12,21 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
+<<<<<<< HEAD
 import { MdLocationOn } from "react-icons/md";
+=======
+// import { MdLocationOn } from "react-icons/md";
+>>>>>>> b9ed5a1 (added changes)
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <>
+<<<<<<< HEAD
       <footer className="footer">
+=======
+      <footer className="footer" id="footer">
+>>>>>>> b9ed5a1 (added changes)
         <Row className="footer-container">
           <Col className="footer-items contact-us">
             <h5>Contact Us</h5>
