@@ -1,7 +1,7 @@
 import React from "react";
 import img from "./Ornament.png";
 import illustration from "./illustration.png";
-import "./App.css";
+import "./CSS/App.css";
 import "./About.jsx";
 
 function Intro() {

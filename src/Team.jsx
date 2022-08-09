@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "./Grid";
-import "./App.css";
+import "./CSS/App.css";
 import GridItem from "./gridItem";
 
 function Team(params) {

@@ -1,9 +1,11 @@
 import React from "react";
 import  img from './logo.png';
-import "./App.css";
-
+import "./CSS/App.css";
+import FundingInitiative from "./components/webForm";
+import { Router, Navigate } from "react-router-dom";
 
 function Navigation(){
+  
 return(
     <>
     <div className="navbar-sticky">
@@ -22,10 +24,10 @@ return(
           <a className="nav-link" href="#">Raise Fund</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Become Investor</a>
+          <a className="nav-link" href="/forms">Become Investor</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Team</a>
+          <a className="nav-link" href="#" onClick>Team</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Contact Us</a>

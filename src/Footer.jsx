@@ -1,6 +1,6 @@
 import { Row, Col } from "react-bootstrap";
 // import Link from "next/link";
-import "./App.css";
+import "./CSS/App.css";
 
 
 import {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./CSS/App.css";
 import GridItem from "./gridItem";
 import img from "./process1.jpg";
 
