@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+// import "../images";
+import nishant from "./nishant_shukla.png";
+import amit from "./amit_kr_baheti.png";
+import akshay from "./akshay_akash.png";
+import sparsh from "./sparsh_agarwal.png";
 import GridItem from "./gridItem";
+import GridItemI from "./gridItem1";
 import { firebaseDB as db } from "./lib/firebase";
 import {
   ref,
@@ -52,6 +58,9 @@ function Team(params) {
           }}
           id="team"
         >
+          <br></br>
+          <br></br>
+          <br></br>
           Meet the Team
         </h2>
 
@@ -65,10 +74,26 @@ function Team(params) {
             Core Team
           </h2>
           <div className="sub-grid-container">
-            <GridItem name="Nishant Shukla" />
-            <GridItem name="Amit Kumar " />
-            <GridItem name="Akshay Akash" />
-            <GridItem name="Sparsh Agarwal" />
+            <GridItemI
+              name="Nishant Shukla"
+              knowMoreLink="https://www.linkedin.com/in/nishantshukla57/"
+              poster={nishant}
+            />
+            <GridItemI
+              name="Amit Kr. Baheti"
+              knowMoreLink="https://www.linkedin.com/in/amitkumarbaheti/"
+              poster={amit}
+            />
+            <GridItemI
+              name="Akshay Akash"
+              knowMoreLink="https://www.linkedin.com/in/akshay-akash/"
+              poster={akshay}
+            />
+            <GridItemI
+              name="Sparsh Agarwal"
+              knowMoreLink="https://www.linkedin.com/in/sparsh-agrawal17/"
+              poster={sparsh}
+            />
           </div>
           <h2
             style={{

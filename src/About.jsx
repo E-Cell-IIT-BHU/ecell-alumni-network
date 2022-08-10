@@ -4,8 +4,9 @@ import "./App.css";
 function About() {
   return (
     <>
-
       <div id="abt">
+        <br></br>
+        <br></br>
         <div className="about">
           <h1>About</h1>
           <p>
@@ -16,7 +17,6 @@ function About() {
             successful and distinguished alums of IIT BHU.
           </p>
         </div>
-
       </div>
     </>
   );
