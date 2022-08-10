@@ -16,7 +16,7 @@ function App() {
     <Intro />
 
     <div style={{textAlign:"center"}}>
-
+    
     <About />
     <Grid />
     <Team />
