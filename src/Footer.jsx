@@ -2,7 +2,6 @@ import { Row, Col } from "react-bootstrap";
 // import Link from "next/link";
 import "./App.css";
 
-
 import {
   FaInstagram,
   FaFacebook,
@@ -20,9 +19,7 @@ import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-
       <footer className="footer" id="footer">
-
         <Row className="footer-container">
           <Col className="footer-items contact-us">
             <h5>Contact Us</h5>

@@ -4,9 +4,11 @@ import "./App.css";
 function About() {
   return (
     <>
-
       <div id="abt">
-        <div className="about" style={{marginTop : "0px"}}>
+        <br></br>
+        <br></br>
+
+        <div className="about" style={{ marginTop: "0px" }}>
           <h1>About</h1>
           <p>
             IIT BHU Alumni Angel Network is a joint initiative of E-Cell IIT BHU
@@ -16,7 +18,6 @@ function About() {
             successful and distinguished alums of IIT BHU.
           </p>
         </div>
-
       </div>
     </>
   );

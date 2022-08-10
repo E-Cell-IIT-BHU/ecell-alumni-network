@@ -1,25 +1,39 @@
 import React from "react";
 import "./App.css";
 
-function  ContactUs(params) {
-    return (<>
-<section className="" style={{marginTop:"6%"}}>
-    <h2 style={{textDecoration:"underline",textDecorationThickness:'2px'}}>Contact Us</h2>
+function ContactUs(params) {
+  return (
+    <>
+      <section className="" style={{ marginTop: "6%" }}>
+        <div id="cnt">
+          <br></br>
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <h2
+          style={{
+            textDecoration: "underline",
+            textDecorationThickness: "2px",
+          }}
+        >
+          Contact Us
+        </h2>
 
-    <div className="container">
-    <div className="" >
-        <h4>Email</h4>
-        <p>ecell@itbhu.ac.in</p>
-    </div>
-    <div className="">
-
-        <h4>Phone Number</h4>
-        <p>+91 9587887413</p>
-    </div>
-    </div>
-    
-</section>
-    </>);
+        <div className="container">
+          <div className="">
+            <h4>Email</h4>
+            <p>ecell@itbhu.ac.in</p>
+          </div>
+          <div className="">
+            <h4>Phone Number</h4>
+            <p>+91 9587887413</p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default ContactUs;
