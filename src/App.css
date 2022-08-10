@@ -94,7 +94,6 @@ img {
 
   display: grid;
   grid-auto-flow: column;
-
   margin: 3% auto;
 
 }
@@ -104,7 +103,7 @@ img {
 .even-column {
   display: grid;
   gap: 1em;
-  margin-top: 96px;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -162,7 +161,7 @@ img {
 }
 .about {
   text-align: center;
-  margin: 10% 17% 6%;
+  margin: 8%;
 }
 #team {
   text-decoration: none;
@@ -191,14 +190,33 @@ img {
   letter-spacing: 0.2px;
   font-size: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 8% 1%;
+    padding: 1% 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 15% 10%;
+    padding: 1% 1%;
+  }
+}
 
-.grid-container {
+
+/* .grid-container {
   background-color: rgba(217, 217, 217, 1);
   border-radius: 23px;
   position: relative;
   margin: 1% 15% 10%;
   padding: 1% 1%;
-}
+} */
 .grid-container img {
   width: 100%;
 }
@@ -345,9 +363,17 @@ img {
   margin-bottom: 3%;
   margin: 1%;
 }
-.form-container {
-  margin: 0 22%;
-  text-align: center;
+@media screen and (max-width : 1200px){
+  .form-container {
+    margin: 0 8%;
+    text-align: center;
+  }
+}
+@media screen and (min-width : 1200px){
+  .form-container {
+    margin: 0 14%;
+    text-align: center;
+  }
 }
 
 .form-group {

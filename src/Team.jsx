@@ -15,7 +15,11 @@ function Team(params) {
      {/* <hr style={{margin:"0% 20%"}}></hr> */}
      <div >
 
+
       <h2 style={{textDecoration:"none!important",margin:'2% 0',fontWeight:"600",textTransform:"uppercase"}} id="team" >Meet the Team</h2>
+
+      <h2 style={{textDecoration:"none!important",marginTop: "50px",fontWeight:"600",textTransform:"uppercase"}} id="team" >Meet the Team</h2>
+
 
       <div className="grid-container" >
         <h2 style={{textDecoration:"underline",textDecorationThickness:'2px'}}>Core Team</h2>

@@ -11,7 +11,11 @@ function About() {
 
       <div id="abt">
 
+
         <div className="about">
+
+        <div className="about" style={{marginTop : "0px"}}>
+
           <h1>About</h1>
           <p>
             IIT BHU Alumni Angel Network is a joint initiative of E-Cell IIT BHU

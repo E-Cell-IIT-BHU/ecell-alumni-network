@@ -18,8 +18,12 @@ function App() {
     <div style={{textAlign:"center"}}>
 
 
+
     <div style={{textAlign:"center"}}>
 
+
+
+    
 
     <About />
     <Grid />

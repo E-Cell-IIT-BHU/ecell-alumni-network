@@ -7,10 +7,11 @@ import "./About.jsx";
 function Intro() {
   return (
     <>
-      <section className="container">
-
       <div className="container">
+
+      <div className="container" style={{height: "100vh"}}>
           <div className="even-column">
+
            
             <div className="flow">
               <h1 id="heading">
@@ -29,6 +30,9 @@ function Intro() {
       <div className="container">
           <div className="even-column">
             <div className="flow">
+
+            <div className="">
+
               <h1>
               IIT BHU Alumni Angel Network
               </h1>
@@ -61,7 +65,7 @@ function Intro() {
 
 
         </div>
-      </section>
+      </div>
     </>
   );
 }
