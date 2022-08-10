@@ -4,8 +4,13 @@ import "./App.css";
 function About() {
   return (
     <>
+
     
     <div id="abt">
+
+
+      <div id="abt">
+
         <div className="about">
           <h1>About</h1>
           <p>

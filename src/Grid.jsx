@@ -9,7 +9,13 @@ function Grid(params) {
     <h1 style={{textAlign:"center",textDecoration:"underline",textDecorationThickness:'2px'}}>Process</h1>
     
       <div className="grid-container">
+
       <img style={{width:"100%",height:"100%",borderRadius:"23px",textAlign:"center"}} src={img}></img>
+
+
+      <img style={{borderRadius:"23px"}} src={img}></img>
+
+
 
         {/* <div className="sub-grid-container">
           <GridItem name="Application Form"  />
