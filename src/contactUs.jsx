@@ -5,8 +5,8 @@ function  ContactUs(params) {
     return (<>
 <section className="" style={{marginTop:"6%"}}>
     <h2 style={{textDecoration:"underline",textDecorationThickness:'2px'}}>Contact Us</h2>
-    <div className="container" style={{margin:"2% 0%"}}>
-    <div className="" style={{textAlign:'center'}} >
+    <div className="container">
+    <div className="" >
         <h4>Email</h4>
         <p>ecell@itbhu.ac.in</p>
     </div>
