@@ -73,10 +73,11 @@ position: fixed;
   }
 }
 @media (max-width:700px){
- .grid-item div p  {
-      font-size: 10px;
+ .grid-item div p text {
+     display: none;
   }
 }
+
 
 
 .container {
@@ -210,7 +211,7 @@ position: fixed;
   overflow: hidden;
   text-align: center;
   transition: transform 500ms ease;
-  background-image: url();
+  /* background-image: url(); */
 }
 .card:hover,
 .card:focus-within {
@@ -403,4 +404,11 @@ p{
   .important-footer {
     display: none;
   }
+}
+.button{
+  background: transparent;
+}
+.button:hover{
+  background-color: rgb(45, 173, 211);
+  color: white;
 }
