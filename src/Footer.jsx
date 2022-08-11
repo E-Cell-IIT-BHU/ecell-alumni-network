@@ -2,7 +2,6 @@ import { Row, Col } from "react-bootstrap";
 // import Link from "next/link";
 import "./App.css";
 
-
 import {
   FaInstagram,
   FaFacebook,
@@ -12,13 +11,15 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
-import { MdLocationOn } from "react-icons/md";
+
+// import { MdLocationOn } from "react-icons/md";
+
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" id="footer">
         <Row className="footer-container">
           <Col className="footer-items contact-us">
             <h5>Contact Us</h5>

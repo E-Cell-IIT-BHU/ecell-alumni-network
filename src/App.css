@@ -13,13 +13,16 @@
   margin: 0px;
   padding: 0px;
   font-family: Montserrat;
+
   /* box-sizing: border-box; */
 
+
+  box-sizing: border-box;
+
 }
-h2{
+h2 {
   text-align: center;
   text-decoration: underline;
-  
 }
 img {
   max-width: 100%;
@@ -29,8 +32,7 @@ img {
   background-color: #ffc26c;
 }
 
-.Navbar{
- 
+.Navbar {
   display: flex;
   flex: 1;
   margin-left: 30%;
@@ -48,13 +50,14 @@ img {
   box-shadow: 0  0 20px 0px rgba(0,0,0,0.2);
   display: flex;
 }
-.navbar-sticky{
-position: fixed;
- top: 0%;
- width: 100%;
- background-color: #fff;
- z-index: 1;
+.navbar-sticky {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
+
 .flow h1{
   text-align: center;
 }
@@ -86,24 +89,41 @@ position: fixed;
   grid-auto-flow: column;
   margin: 2% auto;
   
+
+.container {
+  text-align: center;
+
+  display: grid;
+  grid-auto-flow: column;
+  margin: 3% auto;
+
 }
 :where(.flow) {
   margin-top: var(--flow-spacer, 4em);
 }
-.even-column{
+.even-column {
   display: grid;
   gap: 1em;
-  margin-top: 96px;
+  margin-top: 15%;
   text-align: center;
 }
+
 .scroll {
   visibility: hidden;
 }
+
+
+.scroll {
+  visibility: hidden;
+}
+
+
 @media (min-width: 50em) {
   .even-column {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+
   .scroll {
     visibility: visible;
   }
@@ -111,16 +131,19 @@ position: fixed;
     display: inline;
   }
 }
-.even-column h1{
+.even-column h1 {
   font-weight: 800;
   font-size: 58px;
   line-height: 80px;
+
   color:  #252b42;
+
+  color: #252b42;
+
   letter-spacing: 0.2px;
   text-align: center;
 }
-.even-column p{
-  
+.even-column p {
   font-weight: 400;
   font-size: 20px;
   line-height: 38px;
@@ -130,63 +153,110 @@ position: fixed;
   text-align: center;
   margin-bottom: 26px;
 }
-.illustration{
+.illustration {
   width: 688px;
   height: 443px;
 }
-.about{
+.about {
   text-align: center;
+
   margin: 10% 17% 6%;
 }
 #team {
   text-decoration: none;
+
+  margin: 8%;
+
 }
-.about h1{
+#team {
+  text-decoration: none;
+}
+.about h1 {
   text-decoration: underline;
+
   text-decoration-thickness:2px;
   
   color: #252b42;
+
+  text-decoration-thickness: 2px;
+
+  color: #252b42;
+
   font-weight: 600;
   line-height: 80px;
   letter-spacing: 0.2px;
 }
-.about p{
+
+.about p {
   color: #000;
   line-height: 38px;
   font-weight: 400;
   letter-spacing: 0.2px;
   font-size: 20px;
 }
-.grid-container{
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 8% 1%;
+    padding: 1% 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 15% 10%;
+    padding: 1% 1%;
+  }
+}
+
+
+/* .grid-container {
   background-color: rgba(217, 217, 217, 1);
   border-radius: 23px;
   position: relative;
   margin: 1% 15% 10%;
   padding: 1% 1%;
-  text-align: center;
-}
-.grid-container img{
+} */
+.grid-container img {
   width: 100%;
 }
 
+
 .sub-grid-container{
+
+.sub-grid-container {
+
   display: flex;
   flex-wrap: wrap;
   border-radius: 23px;
   justify-content: space-around;
 }
+
 .grid-item{
  
   margin: 1%;
   border-radius: 23px;
  
   /* top: 200px; */
+
+
+.grid-item {
+  margin: 1%;
+  border-radius: 23px;
+  /* position:relative ; */
+
+
   height: 200px;
   width: 200px;
   background-color: #fff;
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 50rem) {
   .grid-item {
     width: 100px;
@@ -211,7 +281,11 @@ position: fixed;
   overflow: hidden;
   text-align: center;
   transition: transform 500ms ease;
+
   /* background-image: url(); */
+
+  background-image: url();
+
 }
 .card:hover,
 .card:focus-within {
@@ -221,6 +295,7 @@ position: fixed;
   position: absolute;
 
   width: 100%;
+
 
   --padding: 1.5rem;
   padding: var(--padding);
@@ -262,29 +337,77 @@ position: fixed;
   background-color: var(--clr-neutral-100);
 }
 
+
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(hsl(0 0% 0% /0), hsl(0 0% 0% /0.4));
+}
+.card-title {
+  color: #fff;
+}
+.card:hover .card-title::after,
+.card:focus-within .card-content::after {
+  transform: scaleX(1);
+}
+
+@media (hover) {
+  .card-content {
+    transform: translateY(90%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content,
+  .card:focus-within .card-content {
+    transform: translateY(38%);
+    transition-delay: 500ms;
+  }
+  .card:focus-within .card-content {
+    transition-duration: 0ms;
+  }
+  .card-title::after {
+    transform: scaleX(0);
+  }
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: white;
+  padding: 0.3em 1em;
+  border-radius: 23px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--clr-neutral-100);
+}
+
+
 .form-group {
   margin-bottom: 3%;
   margin: 1%;
-  
 }
-.form-container{
- margin: 0 22%; 
- text-align: center;
- 
+@media screen and (max-width : 1200px){
+  .form-container {
+    margin: 0 8%;
+    text-align: center;
+  }
+}
+@media screen and (min-width : 1200px){
+  .form-container {
+    margin: 0 14%;
+    text-align: center;
+  }
 }
 
-.form-group{
+.form-group {
   margin: 0%;
-  
 }
-.form-control{
-  margin-bottom: 5% ;
+.form-control {
+  margin-bottom: 5%;
 }
-.btn{
+.btn {
   margin-bottom: 2%;
 }
-
-
 
 /* Footer */
 .footer {
@@ -294,6 +417,7 @@ position: fixed;
   height: 100%;
 }
 
+
 .contact-us 
   h2 {
     margin: 0px;
@@ -301,8 +425,16 @@ position: fixed;
   }
 .contact-us 
 p{
+
+.contact-us p,
+h2 {
+  margin: 0px;
+  /* font-weight: bold; */
+}
+.contact-us p {
+
   color: grey;
-}  
+}
 
 .footer-container {
   width: 80%;
@@ -315,6 +447,7 @@ p{
   margin: auto;
   width: 100%;
   height: 200px;
+
   text-align: left;
 }
 .footer-items ul {
@@ -338,10 +471,10 @@ p{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 360px;
   margin: 40px auto;
-  
 }
 .social a {
-  display: flex ;
+  display: flex;
+
   justify-content: center;
   align-items: center;
 }
