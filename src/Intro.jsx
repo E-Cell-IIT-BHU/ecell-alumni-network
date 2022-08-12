@@ -12,7 +12,7 @@ function Intro() {
       <div className="container" style={{height: "100vh"}}>
           <div className="even-column">
             <div className="">
-              <h1>
+              <h1 id="heading">
               IIT BHU Alumni Angel Network
               </h1>
               <p>

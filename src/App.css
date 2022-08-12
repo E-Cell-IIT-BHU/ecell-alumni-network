@@ -29,11 +29,17 @@ img {
 
 .Navbar {
   display: flex;
+  flex: 1;
   margin-left: 30%;
   margin-right: 100px;
   width: 100%;
   font-weight: 500;
   justify-content: space-between;
+}
+.navbar{
+  /* box-shadow: 0  0 20px 0px rgba(0,0,0,0.2); */
+  display: flex;
+  height: 10vh;
 }
 .navbar-sticky {
   position: fixed;
@@ -42,12 +48,32 @@ img {
   background-color: #fff;
   z-index: 1;
 }
+@media (max-width:700px){
+  #heading{
+      font-size: 40px;
+  }
+}
+@media (max-width:700px){
+  #para{
+      font-size: 20px;
+  }
+}
+@media (max-width:800px){
+ .card-content p {
+  font-size: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: -25px;
+    
+  }
+}
+
 .container {
   text-align: center;
 
   display: grid;
   grid-auto-flow: column;
-  margin: 3% auto;
+  margin: 2% auto;
 }
 :where(.flow) {
   margin-top: var(--flow-spacer, 4em);
@@ -55,7 +81,8 @@ img {
 .even-column {
   display: grid;
   gap: 1em;
-  margin-top: 15%;
+  /* margin-top: 15%; */
+  margin-top: 96px;
   text-align: center;
 }
 
@@ -100,7 +127,8 @@ img {
 }
 .about {
   text-align: center;
-  margin: 8%;
+  /* margin: 8%; */
+  margin: 10% 17% 6%;
 }
 #team {
   text-decoration: none;
@@ -130,6 +158,7 @@ img {
     position: relative;
     margin: 1% 8% 1%;
     padding: 1% 1%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -197,7 +226,7 @@ img {
   overflow: hidden;
   text-align: center;
   transition: transform 500ms ease;
-  background-image: url();
+  /* background-image: url(); */
 }
 .card:hover,
 .card:focus-within {
@@ -257,7 +286,8 @@ img {
 }
 @media screen and (max-width : 1200px){
   .form-container {
-    margin: 0 8%;
+    /* margin: 0 8%; */
+    margin: 0 22%; 
     text-align: center;
   }
 }
@@ -397,3 +427,6 @@ h2 {
     display: none;
   }
 }
+/* .button{
+  background: transparent;
+} */
