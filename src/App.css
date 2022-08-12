@@ -39,7 +39,7 @@ img {
 .navbar{
   /* box-shadow: 0  0 20px 0px rgba(0,0,0,0.2); */
   display: flex;
-  height: 10vh;
+  /* height: 10vh; */
 }
 .navbar-sticky {
   position: fixed;
@@ -64,7 +64,7 @@ img {
   align-items: center;
   position: absolute;
   bottom: -25px;
-    
+
   }
 }
 
