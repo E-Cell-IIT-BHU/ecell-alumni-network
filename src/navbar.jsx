@@ -1,8 +1,8 @@
 import React from "react";
 import  img from './logo.png';
 import "./CSS/App.css";
-import FundingInitiative from "./components/webForm";
-import { Router, Navigate } from "react-router-dom";
+// import FundingInitiative from "./components/webForm";
+// import { Router, Navigate } from "react-router-dom";
 
 function Navigation(){
   
