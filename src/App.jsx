@@ -1,31 +1,25 @@
 import React from "react";
-import  Navigation  from "./navbar";
-import Intro from "./Intro";
-import About from "./About";
-import Grid from "./Grid";
-import Team from "./Team"
-import ContactUs from "./contactUs";
-import Form from "./form";
+import Home from "./Home";
+import {
+  BrowserRouter as Router, Routes,
+  Route,
+} from "react-router-dom";
+import FundingInitiative from "./InvestingForm"
 import Footer from "./Footer";
+import Navigation from "./navbar";
 
 
 function App() {
   return (
     <div className="App">
-    <Navigation />
-    <Intro />
-
-    <div style={{textAlign:"center"}}>
-    
-    <About />
-    <Grid />
-    <Team />
-    <ContactUs />
-    <Form/>
-    <Footer/>
-    
-    <hr style={{margin:"2% 20%"}}></hr>
-    </div>
+      <Navigation />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/forms" element={<FundingInitiative />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
