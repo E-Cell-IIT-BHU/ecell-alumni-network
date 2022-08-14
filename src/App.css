@@ -1,7 +1,10 @@
+/* General CSS */
+
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-accent-400: #fb6930;
+  --columns:2;
 }
 *,
 *::before,
@@ -27,27 +30,64 @@ img {
   background-color: #ffc26c;
 }
 
+/* App.jsx */
+.App{
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+
 .Navbar {
-  display: flex;
-  margin-left: 30%;
-  margin-right: 100px;
   width: 100%;
+  padding: 0;
   font-weight: 500;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .navbar-sticky {
-  position: fixed;
-  top: 0%;
-  width: 100%;
+  position: sticky;
+  top: 0;
   background-color: #fff;
-  z-index: 1;
+  z-index: 10;
+}
+.navbar-logo{
+  display:inline-block;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+.navbar-brand{
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0 0 0 25px;
+  margin-right: 25%;
+}
+.navbar-logo img{
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 120px;
+  height: 50px;
+  
+}
+
+/* Intro */
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .container {
   text-align: center;
-
   display: grid;
   grid-auto-flow: column;
-  margin: 3% auto;
+  margin: 0 auto;
 }
 :where(.flow) {
   margin-top: var(--flow-spacer, 4em);
@@ -55,7 +95,7 @@ img {
 .even-column {
   display: grid;
   gap: 1em;
-  margin-top: 15%;
+  margin-top: 4%;
   text-align: center;
 }
 
@@ -63,18 +103,18 @@ img {
   visibility: hidden;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 990px) {
   .even-column {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
 
-  .scroll {
+  /* .scroll {
     visibility: visible;
-  }
-  .scroll img {
+  } */
+  /* .scroll img {
     display: inline;
-  }
+  } */
 }
 .even-column h1 {
   font-weight: 800;
@@ -98,13 +138,14 @@ img {
   width: 688px;
   height: 443px;
 }
+
+/* About */
+
 .about {
   text-align: center;
   margin: 8%;
 }
-#team {
-  text-decoration: none;
-}
+
 .about h1 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -123,25 +164,12 @@ img {
   letter-spacing: 0.2px;
   font-size: 20px;
 }
-@media screen and (max-width: 1200px) {
-  .grid-container {
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 23px;
-    position: relative;
-    margin: 1% 8% 1%;
-    padding: 1% 1%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .grid-container {
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 23px;
-    position: relative;
-    margin: 1% 15% 10%;
-    padding: 1% 1%;
-  }
-}
 
+/* Team */
+
+#team {
+  text-decoration: none;
+}
 
 /* .grid-container {
   background-color: rgba(217, 217, 217, 1);
@@ -153,19 +181,41 @@ img {
 .grid-container img {
   width: 100%;
 }
+@media screen and (max-width: 1320px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 8% 1%;
+    padding: 1% 1%;
+  }
+  /* .sub-grid-container{
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / var(--columns) - 20px), 1fr));
+  } */
+}
+@media screen and (min-width: 1320px) {
+  .grid-container {
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 23px;
+    position: relative;
+    margin: 1% 8% 10%;
+    padding: 1% 1%;
+  }
+
+}
 
 .sub-grid-container {
   display: flex;
   flex-wrap: wrap;
   border-radius: 23px;
   justify-content: space-around;
+  /* grid-template-columns: repeat(auto-fit, minmax(calc(100% / var(--columns) - 20px), 1fr)); */
 }
 
 .grid-item {
   margin: 1%;
   border-radius: 23px;
   /* position:relative ; */
-
   height: 200px;
   width: 200px;
   background-color: #fff;
@@ -191,6 +241,7 @@ img {
 }
 
 /* Card  */
+
 .card {
   background-size: cover;
   border-radius: 23px;
@@ -251,17 +302,19 @@ img {
   background-color: var(--clr-neutral-100);
 }
 
+/* Form */
+
 .form-group {
   margin-bottom: 3%;
   margin: 1%;
 }
-@media screen and (max-width : 1200px){
+@media screen and (max-width: 1200px) {
   .form-container {
     margin: 0 8%;
     text-align: center;
   }
 }
-@media screen and (min-width : 1200px){
+@media screen and (min-width: 1200px) {
   .form-container {
     margin: 0 14%;
     text-align: center;
@@ -279,6 +332,7 @@ img {
 }
 
 /* Footer */
+
 .footer {
   max-width: 1380px;
   margin: auto;
