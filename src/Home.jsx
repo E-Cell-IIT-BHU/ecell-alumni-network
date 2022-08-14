@@ -15,7 +15,6 @@ function Home() {
             <Team />
             <ContactUs />
             <Form />
-            <hr style={{ margin: "2% 20%" }}></hr>
         </>
     )
 }

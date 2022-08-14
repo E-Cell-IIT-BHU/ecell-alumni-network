@@ -21,6 +21,8 @@ function App() {
         </Routes>
       </Router>
       <Footer />
+      <hr style={{ margin: "2% 20%" }}></hr>
+
       {/* </div> */}
     </div>
   );
