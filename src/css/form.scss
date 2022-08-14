@@ -1,0 +1,87 @@
+#funding{
+    margin: 10% auto;
+  }
+  
+  .formHeading
+  {
+    text-decoration: none;
+    margin-bottom: 10%;
+    font-weight: bolder;
+  }
+  
+  .cf {
+      /* text-align: center; */
+      margin: 20px auto;
+      width: 60%;
+      .form-item {
+        margin: 25px 0px;
+        .checkbox-option {
+          input,
+          span {
+            width: fit-content;
+            font-size: 1.1rem;
+          }
+        }
+        label {
+          padding: 0;
+          span {
+            font-size: 0.9rem;
+          }
+          h5 {
+            font-size: 1.1rem;
+          }
+          .radio-item {
+            font-size: 1.1rem;
+          }
+        }
+        #contact-message {
+          height: 10px;
+        }
+      }
+      input,
+      textarea {
+        border: 0;
+        outline: 0;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+        font-family: "Merriweather", sans-serif;
+        resize: none;
+      }
+    
+      #input-submit {
+        color: white;
+        background: #fb6930;
+        cursor: pointer;
+        width: 100%;
+    
+        /* // &:hover {
+        //   @include box-shadow(0 1px 1px 1px rgba(#aaa, 0.6));
+        // } */
+      }
+    
+      textarea {
+        height: 126px;
+      }
+    }
+    
+    .cf:before,
+    .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+  
+    @media screen and (max-width: 900px) {
+      
+      #funding{
+        margin-top: 20%;
+      }
+    }
+  
+    @media screen and (max-width: 900px) {
+      
+      #funding{
+        margin-top: 20%;
+      }
+    }
