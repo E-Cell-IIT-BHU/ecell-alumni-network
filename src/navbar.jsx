@@ -30,28 +30,23 @@ function Navigation() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav  mb-2 mb-lg-0 Navbar">
-                {/* <li className="nav-item">
-                  <a className="nav-link" id="about" href="#abt">
-                    About
-                  </a>
-                </li> */}
                 <li className="nav-item">
-                  <a className="nav-link" id="raise-fund" href="#">
+                  <a className="nav-link" id="raise-fund" href="/#">
                     Raise Fund
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" id="become-investor" href="#form">
+                  <a className="nav-link" id="become-investor" href="/forms">
                     Become Investor
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#team">
+                  <a className="nav-link" href="/#team">
                     Team
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#cnt">
+                  <a className="nav-link" href="/#cnt">
                     Contact Us
                   </a>
                 </li>
