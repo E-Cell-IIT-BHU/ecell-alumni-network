@@ -9,17 +9,9 @@ function Navigation() {
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              <img
-                src={img}
-                alt="Ecell-logo"
-                style={{
-                  width: "85%",
-                  height: "8vh",
-                  marginLeft: "25px",
-                  paddingTop: "0.3125rem",
-                  paddingBottom: "0.3125rem",
-                }}
-              />
+              <div className="navbar-logo">
+                <img src={img} alt="Ecell-logo" />
+              </div>
             </a>
 
             <button
@@ -38,11 +30,6 @@ function Navigation() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav  mb-2 mb-lg-0 Navbar">
-                <li className="nav-item">
-                  <a className="nav-link" id="about" href="/#abt">
-                    About
-                  </a>
-                </li>
                 <li className="nav-item">
                   <a className="nav-link" id="raise-fund" href="/#">
                     Raise Fund

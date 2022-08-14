@@ -12,6 +12,7 @@ import Navigation from "./navbar";
 function App() {
   return (
     <div className="App">
+    {/* <div style={{ textAlign: "center" }}> */}
       <Navigation />
       <Router>
         <Routes>
@@ -20,6 +21,7 @@ function App() {
         </Routes>
       </Router>
       <Footer />
+      {/* </div> */}
     </div>
   );
 }

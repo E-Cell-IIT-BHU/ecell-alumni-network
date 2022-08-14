@@ -7,33 +7,25 @@ import "./About.jsx";
 function Intro() {
   return (
     <>
-      <div className="container">
-
-      <div className="container" style={{height: "100vh"}}>
+      <div className="">
+        <div className="container">
           <div className="even-column">
-            <div className="">
-              <h1>
-              IIT BHU Alumni Angel Network
-              </h1>
-              <p>
-              An initiative by IIT BHU Alumni and E-Cell IIT BHU
-              </p>
-              <a href="#abt" className="scroll">
-            <img
+            <div className="info">
+              <h1>IIT BHU Alumni Angel Network</h1>
+              <p>An initiative by IIT BHU Alumni and E-Cell IIT BHU</p>
+              {/* <a href="#abt" className="scroll">
+                <img
               style={{textAlign:"center"}}
 
               src={img}
               alt="scroll-down-icon"
             ></img>
-          </a>
-
-              
+              </a> */}
             </div>
             <div>
               <img src={illustration} alt="" />
             </div>
           </div>
-
         </div>
       </div>
     </>
