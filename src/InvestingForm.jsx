@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap";
 import "./css/form.scss"
 import { ref, set } from "firebase/database";
 import {firebaseDB} from "./lib/firebase";
-
+import ContactUs from "./contactUs";
 const FundingInitiative = () => {
 
   const [formDetails, setFormDetails] = useState({
@@ -239,6 +239,7 @@ const FundingInitiative = () => {
           id="input-submit"
         />
       </form>
+      <ContactUs />
     </>
   );
 };
