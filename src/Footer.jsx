@@ -75,24 +75,25 @@ const Footer = () => {
               <Col>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/events">Events</a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://medium.com/ecelliitbhu/feature/home"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Blogs
+                    <a href="https://ecelliitbhu.com"
+                    target="_blank">
+                      E-Cell Home
                     </a>
                   </li>
                   <li>
-                    <a href="https://bit.ly/build-with-us-ecell">Initiatives</a>
+                    <a href="/forms/raiseFunds">Raise Funds</a>
                   </li>
                   <li>
+                    <a
+                      href="/forms"
+                    >
+                      Become Investor
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#team">I-AAN Team</a>
+                  </li>
+                  /* <li>
                     <a href="/gallery">Gallery</a>
                   </li>
                 </ul>
@@ -119,8 +120,8 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="/contacts">Contact Us</a>
-                  </li>
-                </ul>
+                  </li> */
+                </ul> 
               </Col>
             </Row>
           </Col>
