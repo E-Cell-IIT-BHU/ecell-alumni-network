@@ -71,8 +71,7 @@ const Footer = () => {
           </Col>
           <Col className="footer-items important-footer">
             <h5>Important</h5>
-            <Row style={{ display: "grid", gridTemplateColumns: "1.5fr 3fr" }}>
-              <Col>
+            <Row style={{ display: "grid", gridTemplateColumns: "1.5fr 3fr" }}
                 <ul>
                   <li>
                     <a href="https://ecelliitbhu.com"
@@ -93,37 +92,8 @@ const Footer = () => {
                   <li>
                     <a href="/#team">I-AAN Team</a>
                   </li>
-                  /* <li>
-                    <a href="/gallery">Gallery</a>
-                  </li>
-                </ul>
-              </Col>
-              <Col>
-                <ul>
-                  <li>
-                    <a href="/who_we_are">Who we are?</a>
-                  </li>
-                  <li>
-                    <a href="">How E-Cell works</a>
-                  </li>
-                  <li>
-                    <a href="/team">Meet the team</a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tiiciitbhu.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      TIIC
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/contacts">Contact Us</a>
-                  </li> */
                 </ul> 
               </Col>
-            </Row>
           </Col>
           <Col className="footer-items">
             <iframe
