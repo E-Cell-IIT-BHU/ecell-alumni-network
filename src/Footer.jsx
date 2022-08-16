@@ -74,25 +74,23 @@ const Footer = () => {
             <Row style={{ display: "grid", gridTemplateColumns: "1.5fr 3fr" }}>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <a href="https://ecelliitbhu.com" target="_blank">E-Cell Home</a>
                   </li>
                   <li>
-                    <a href="/events">Events</a>
+                    <a href="/forms/raiseFunds">Raise Funds</a>
                   </li>
                   <li>
                     <a
-                      href="https://medium.com/ecelliitbhu/feature/home"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/forms"
                     >
-                      Blogs
+                      Become Investor
                     </a>
                   </li>
                   <li>
-                    <a href="https://bit.ly/build-with-us-ecell">Initiatives</a>
+                    <a href="/#team">I-AAN Team</a>
                   </li>
                   <li>
-                    <a href="/gallery">Gallery</a>
+                    <a href="https://ecelliitbhu.com/team" target="_blank">E-Cell Team</a>
                   </li>
                 </ul>
             </Row>
