@@ -27,6 +27,8 @@ function ContactUs(params) {
             <p>+91 9587887413</p>
           </div>
         </div>
+        <br></br>
+        <br></br>
       </section>
     </>
   );
