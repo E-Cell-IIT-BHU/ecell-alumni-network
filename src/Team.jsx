@@ -58,9 +58,7 @@ function Team(params) {
           }}
           id="team"
         >
-          <br></br>
-          <br></br>
-          <br></br>
+          
           Meet the Team
         </h2>
 
