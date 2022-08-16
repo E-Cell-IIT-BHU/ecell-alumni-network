@@ -6,7 +6,6 @@ function ContactUs(params) {
     <>
       <section className="" style={{ marginTop: "6%" }}>
         <div id="cnt">
-          <br></br>
         </div>
         <h2
           style={{
