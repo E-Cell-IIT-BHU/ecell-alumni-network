@@ -7,6 +7,7 @@ function About() {
       <div id="abt">
         <br></br>
         <br></br>
+            <br></br>
 
         <div className="about" style={{ marginTop: "0px" }}>
           <h1>About</h1>
