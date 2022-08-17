@@ -8,13 +8,9 @@ function Navigation() {
       <div className="navbar-sticky">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid">
-<<<<<<< HEAD
             <a className="navbar-brand" href="/#">
-=======
-            <a className="navbar-brand" href="https://iaan.ecelliitbhu.com/">
->>>>>>> f4b2a00a8ab6760df1b870007c1b6fe1f7acd177
               <div className="navbar-logo">
-                <img src={img} alt="E-Cell-Logo" />
+                <img src={img} alt="Ecell-logo" />
               </div>
             </a>
 
