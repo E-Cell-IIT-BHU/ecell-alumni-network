@@ -76,6 +76,7 @@ const FundingInitiative = () => {
             type="text"
             style={{ borderBottom: "2px solid grey" }}
             value={formDetails.name}
+            placeholder="Ethan Hunt"
             onChange={(e) =>
               setFormDetails({ ...formDetails, name: e.target.value })
             }
