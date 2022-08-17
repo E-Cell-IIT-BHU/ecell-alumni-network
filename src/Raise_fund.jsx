@@ -68,6 +68,11 @@ function Raise_fund() {
 
         setIsSubmitting(true);
         e.preventDefault();
+        if( formDetails.pdf_file = "" )
+        {
+            alert("Please Upload Your Abstract");
+            return;
+        }
         console.log(formDetails);
 
         const db = firebaseDB;
@@ -400,6 +405,7 @@ function Raise_fund() {
                         }
                     ></textarea>
                 </Row>
+                <span >Please fill out all the fields before submiting that are marked with <span style={{ color: "red" }}>*</span> </span>
                 <input
                     type={isSubmitting ? "button" : "submit"}
                     value={isSubmitting ? "Submitting..." : "Submit"}
