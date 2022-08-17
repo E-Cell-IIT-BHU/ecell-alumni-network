@@ -68,6 +68,11 @@ function Raise_fund() {
 
         setIsSubmitting(true);
         e.preventDefault();
+        if( formDetails.pdf_file = "" )
+        {
+            alert("Please Upload Your Abstract");
+            return;
+        }
         console.log(formDetails);
 
         const db = firebaseDB;
@@ -144,6 +149,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.email}
+                        placeholder = "abc@company.com"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, email: e.target.value })
                         }
@@ -161,6 +167,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.founderName}
+                        placeholder = "Ethan Hunt"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, founderName: e.target.value })
                         }
@@ -178,6 +185,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.LinkedIn_Profile}
+                        placeholder = "https://linkedin.com/in/link"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, LinkedIn_Profile: e.target.value })
                         }
@@ -195,6 +203,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.PhoneNumber}
+                        placeholder = "8765741289"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, PhoneNumber: e.target.value })
                         }
@@ -212,6 +221,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.No_of_Cofounder}
+                        placeholder = "No. of Co-founders"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, No_of_Cofounder: e.target.value })
                         }
@@ -250,6 +260,7 @@ function Raise_fund() {
                         type="text"
                         style={{ borderBottom: "2px solid grey" }}
                         required
+                        placeholder='Your StartUp Name'
                         value={formDetails.startUp_name}
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, startUp_name: e.target.value })
@@ -268,6 +279,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.company_website}
+                        placeholder="https://linkedin.com/company/name"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, company_website: e.target.value })
                         }
@@ -284,6 +296,7 @@ function Raise_fund() {
                         type="text"
                         style={{ borderBottom: "2px solid grey" }}
                         required
+                        placeholder= "Edtech/ Fintech/ Agritech/ etc.."
                         value={formDetails.sector}
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, sector: e.target.value })
@@ -301,6 +314,7 @@ function Raise_fund() {
                         type="text"
                         style={{ borderBottom: "2px solid grey" }}
                         required
+                        placeholder='Pre-Seed/ Seed/ SeriesA/ etc..'
                         value={formDetails.stage_of_startup}
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, stage_of_startup: e.target.value })
@@ -319,6 +333,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.ides_description}
+                        placeholder="Description of your startup idea"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, ides_description: e.target.value })
                         }
@@ -337,6 +352,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.Previous_funding}
+                        placeholder="Have you raised any amount so far ?? "
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, Previous_funding: e.target.value })
                         }
@@ -354,6 +370,7 @@ function Raise_fund() {
                         type="text"
                         style={{ borderBottom: "2px solid grey" }}
                         required
+                        placeholder="How much amount are you looking to raise? (in INR)"
                         value={formDetails.Funding_to_raise}
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, Funding_to_raise: e.target.value })
@@ -394,12 +411,14 @@ function Raise_fund() {
                         rows="10"
                         style={{ border: "2px solid grey" }}
                         value={formDetails.suggestion}
+                        placeholder="Any suggestion you want to give us"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, suggestion: e.target.value })
                         }
                         }
                     ></textarea>
                 </Row>
+                <span >Please fill out all the fields before submiting that are marked with <span style={{ color: "red" }}>*</span> </span>
                 <input
                     type={isSubmitting ? "button" : "submit"}
                     value={isSubmitting ? "Submitting..." : "Submit"}
