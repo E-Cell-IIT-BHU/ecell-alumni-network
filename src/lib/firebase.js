@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDbsm5M2sn-sD0oSlDhTkojTcEnH0el8lU",
   authDomain: "e-cell-iit-bhu-website.firebaseapp.com",
