@@ -161,3 +161,15 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+//abc@company.com
+// 
+// https://linkedin.com/in/link
+// Ethan Hunt
+// No. of Co-founders**
+// https://linkedin.com/company/name
+// How much amount are you looking to raise? (in INR)
+// EdTech/AgriTech  etc...
+//descrption of idea 
+// Have you raised any amount so far?
