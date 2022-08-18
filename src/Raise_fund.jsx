@@ -137,7 +137,7 @@ function Raise_fund() {
                 onSubmit={handleSubmit}
                 autoComplete="on"
             >
-                <h2 className="formHeading">Raise Funds | IAAN</h2>
+                <h2 className="formHeading">Raise Funds | I-AAN</h2>
                 <Row className="form-item">
                     <label>
                         <h5>
