@@ -185,7 +185,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.LinkedIn_Profile}
-                        placeholder = "https://linkedin.com/in/link"
+                        placeholder = "https://linkedin.com/in/accountname"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, LinkedIn_Profile: e.target.value })
                         }
@@ -213,7 +213,7 @@ function Raise_fund() {
                 <Row className="form-item">
                     <label htmlFor="linkedIn">
                         <h5>
-                            No of Cofounder <span style={{ color: "red" }}>*</span>
+                            No. of Co-founders <span style={{ color: "red" }}>*</span>
                         </h5>
                     </label>
                     <input
@@ -333,7 +333,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.ides_description}
-                        placeholder="Description of your startup idea"
+                        placeholder="What problem you are solving and How are you solving it?"
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, ides_description: e.target.value })
                         }
@@ -344,7 +344,7 @@ function Raise_fund() {
                 <Row className="form-item">
                     <label htmlFor="linkedIn">
                         <h5>
-                            Funding Raised Previously <span style={{ color: "red" }}>*</span>
+                            Have you raised any amount so far ? <span style={{ color: "red" }}>*</span>
                         </h5>
                     </label>
                     <input
@@ -352,7 +352,7 @@ function Raise_fund() {
                         style={{ borderBottom: "2px solid grey" }}
                         required
                         value={formDetails.Previous_funding}
-                        placeholder="Have you raised any amount so far ?? "
+                        placeholder="INR 30 Lacs "
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, Previous_funding: e.target.value })
                         }
@@ -363,14 +363,14 @@ function Raise_fund() {
                 <Row className="form-item">
                     <label htmlFor="linkedIn">
                         <h5>
-                            Funding looking to raise <span style={{ color: "red" }}>*</span>
+                            How much amount are you looking to raise? (in INR) <span style={{ color: "red" }}>*</span>
                         </h5>
                     </label>
                     <input
                         type="text"
                         style={{ borderBottom: "2px solid grey" }}
                         required
-                        placeholder="How much amount are you looking to raise? (in INR)"
+                        placeholder="INR 30 Lacs"
                         value={formDetails.Funding_to_raise}
                         onChange={(e) => {
                             setFormDetails({ ...formDetails, Funding_to_raise: e.target.value })
@@ -381,7 +381,7 @@ function Raise_fund() {
                 <Row className="form-item file">
                     <label>
                         <h5>
-                            Upload Your Abstract <span style={{ color: "red" }}>*</span>
+                            Upload Your Pitch-deck <span style={{ color: "red" }}>*</span>
                         </h5>
                     </label>
                     <input
