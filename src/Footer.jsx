@@ -83,7 +83,7 @@ const Footer = () => {
                     <a
                       href="/forms"
                     >
-                      Become Investor
+                      Register as Investor
                     </a>
                   </li>
                   <li>
