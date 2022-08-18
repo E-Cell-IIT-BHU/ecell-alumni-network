@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import FundingInitiative from "./InvestingForm"
-import Raise_fund from "./Raise_fund";
+import Raise_fund from "./Raise_funds";
 import Footer from "./Footer";
 import Navigation from "./navbar";
 
@@ -18,8 +18,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/forms" element={<FundingInitiative />} />
-          <Route exact path="/raise_fund" element={<Raise_fund/>} />
+          <Route exact path="/register_as_investor" element={<FundingInitiative />} />
+          <Route exact path="/raise_funds" element={<Raise_fund/>} />
         </Routes>
       </Router>
       <Footer />
