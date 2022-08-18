@@ -187,7 +187,7 @@ const FundingInitiative = () => {
           <label>
             <h5>
               {`Total amount you can commit to all deals combined ( the plan is to
-              raise 25L to 1 Cr for 10-15 companies in 2022 )`}
+              raise 25L to 1 Cr each for 10-15 companies in 2022 )`}
               {/* <span style={{ color: "red" }}>*</span> */}
             </h5>
           </label>
