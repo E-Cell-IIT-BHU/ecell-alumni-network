@@ -196,7 +196,7 @@ img {
 @media screen and (min-width: 1320px) {
   .grid-container {
     background-color: rgba(217, 217, 217, 1);
-    border-radius: 13px;
+    border-radius: 23px;
     position: relative;
     margin: 1% 8% 10%;
     padding: 1% 1%;
