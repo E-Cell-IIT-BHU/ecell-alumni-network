@@ -65,7 +65,7 @@ const FundingInitiative = () => {
         style={{ width: "95%", maxWidth: "800px" }}
         onSubmit={handleSubmit}
       >
-        <h2 className="formHeading">Funding Initiative for IIT(BHU) Alumni</h2>
+        <h2 className="formHeading">Register as Investor | I-AAN</h2>
         <Row className="form-item">
           <label>
             <h5>
