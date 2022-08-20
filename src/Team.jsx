@@ -44,6 +44,7 @@ function Team(params) {
       (error) => console.log(error)
     );
   }, [isLoading]);
+ 
 
   return (
     <>
@@ -51,7 +52,8 @@ function Team(params) {
       <div>
         <h2
           style={{
-            textDecoration: "none!important",
+            // textDecoration: "none!important",
+            textDecoration: "underline",
             margin: "2% 0",
             fontWeight: "600",
             textTransform: "uppercase",
