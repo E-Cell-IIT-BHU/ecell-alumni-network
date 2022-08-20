@@ -6,7 +6,7 @@ const GridItem = ({ title, poster, knowMoreLink }) => {
   return (
     <>
       <div className="grid-item align-bottom card">
-        <img src={poster} />
+       <a href={knowMoreLink} target="blank"> <img src={poster} /></a>
         <div className="card-content">
           <p className="card-title">{title}</p>
           <a className="button" href={knowMoreLink} target="blank">
