@@ -77,13 +77,13 @@ const Footer = () => {
                     <a href="https://ecelliitbhu.com" target="_blank">E-Cell Home</a>
                   </li>
                   <li>
-                    <a href="/forms/raiseFunds">Raise Funds</a>
+                    <a href="/raise_fund">Raise Funds</a>
                   </li>
                   <li>
                     <a
                       href="/forms"
                     >
-                      Become Investor
+                      Register as Investor
                     </a>
                   </li>
                   <li>

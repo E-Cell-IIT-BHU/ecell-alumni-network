@@ -65,7 +65,7 @@ const FundingInitiative = () => {
         style={{ width: "95%", maxWidth: "800px" }}
         onSubmit={handleSubmit}
       >
-        <h2 className="formHeading">Funding Initiative for IIT(BHU) Alumni</h2>
+        <h2 className="formHeading">Register as Investor | I-AAN</h2>
         <Row className="form-item">
           <label>
             <h5>
@@ -76,6 +76,7 @@ const FundingInitiative = () => {
             type="text"
             style={{ borderBottom: "2px solid grey" }}
             value={formDetails.name}
+            placeholder="Ethan Hunt"
             onChange={(e) =>
               setFormDetails({ ...formDetails, name: e.target.value })
             }
@@ -186,7 +187,7 @@ const FundingInitiative = () => {
           <label>
             <h5>
               {`Total amount you can commit to all deals combined ( the plan is to
-              raise 25L to 1 Cr for 10-15 companies in 2022 )`}
+              raise 25L to 1 Cr each for 10-15 companies in 2022 )`}
               {/* <span style={{ color: "red" }}>*</span> */}
             </h5>
           </label>

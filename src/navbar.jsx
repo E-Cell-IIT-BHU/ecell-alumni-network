@@ -8,7 +8,7 @@ function Navigation() {
       <div className="navbar-sticky">
         <nav className="navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/#">
               <div className="navbar-logo">
                 <img src={img} alt="Ecell-logo" />
               </div>
@@ -31,13 +31,13 @@ function Navigation() {
             >
               <ul className="navbar-nav  mb-2 mb-lg-0 Navbar">
                 <li className="nav-item">
-                  <a className="nav-link" id="raise-fund" href="/#">
-                    Raise Fund
+                  <a className="nav-link" id="raise-fund" href="/raise_fund">
+                    Raise Funds
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" id="become-investor" href="/forms">
-                    Become Investor
+                  <a className="nav-link" id="become-investor" href="/form">
+                    Register as Investor
                   </a>
                 </li>
                 <li className="nav-item">
