@@ -72,27 +72,27 @@ const Footer = () => {
           <Col className="footer-items important-footer">
             <h5>Important</h5>
             <Row style={{ display: "grid", gridTemplateColumns: "1.5fr 3fr" }}>
-                <ul>
-                  <li>
-                    <a href="https://ecelliitbhu.com" target="_blank">E-Cell Home</a>
-                  </li>
-                  <li>
-                    <a href="/raise_fund">Raise Funds</a>
-                  </li>
-                  <li>
-                    <a
-                      href="/forms"
-                    >
-                      Register as Investor
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/#team">I-AAN Team</a>
-                  </li>
-                  <li>
-                    <a href="https://ecelliitbhu.com/team" target="_blank">E-Cell Team</a>
-                  </li>
-                </ul>
+              <ul>
+                <li>
+                  <a href="https://ecelliitbhu.com" target="_blank">
+                    E-Cell Home
+                  </a>
+                </li>
+                <li>
+                  <a href="/raise_funds">Raise Funds</a>
+                </li>
+                <li>
+                  <a href="/forms">Register as Investor</a>
+                </li>
+                <li>
+                  <a href="/#team">I-AAN Team</a>
+                </li>
+                <li>
+                  <a href="https://ecelliitbhu.com/team" target="_blank">
+                    E-Cell Team
+                  </a>
+                </li>
+              </ul>
             </Row>
           </Col>
           <Col className="footer-items">

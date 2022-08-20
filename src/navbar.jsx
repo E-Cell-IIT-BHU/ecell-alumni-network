@@ -31,12 +31,16 @@ function Navigation() {
             >
               <ul className="navbar-nav  mb-2 mb-lg-0 Navbar">
                 <li className="nav-item">
-                  <a className="nav-link" id="raise-fund" href="/raise_fund">
+                  <a className="nav-link" id="raise-fund" href="/raise_funds">
                     Raise Funds
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" id="become-investor" href="/form">
+                  <a
+                    className="nav-link"
+                    id="become-investor"
+                    href="/investing_form"
+                  >
                     Register as Investor
                   </a>
                 </li>
