@@ -231,6 +231,7 @@ img {
 @media screen and (max-width:800px) {
   .sub-grid-container{
     justify-content: space-evenly;
+    border-radius: 0px!important;
   }
 }
 

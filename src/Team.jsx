@@ -52,8 +52,7 @@ function Team(params) {
       <div>
         <h2
           style={{
-            // textDecoration: "none!important",
-            textDecoration: "underline",
+             textDecoration: "none!important",
             margin: "2% 0",
             fontWeight: "600",
             textTransform: "uppercase",
@@ -102,7 +101,7 @@ function Team(params) {
               margin: "2% 0",
             }}
           >
-            Evaluation Team
+            Advisors
           </h2>
           <div className="sub-grid-container">
             {/* <GridItem name="Aditya Talwar"/>

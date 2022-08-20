@@ -6,7 +6,7 @@ function GridItemI(props) {
   return (
     <>
       <div className="grid-item align-bottom card">
-        <img src={props.poster} />
+       <a href={props.knowMoreLink}> <img src={props.poster} /> </a>
         <div className="card-content">
           <p className="card-title">{props.name}</p>
           <a className="button" href={props.knowMoreLink} target="blank">
