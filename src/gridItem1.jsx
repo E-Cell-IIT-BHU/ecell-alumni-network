@@ -6,10 +6,10 @@ function GridItemI(props) {
   return (
     <>
       <div className="grid-item align-bottom card">
-       <a href={props.knowMoreLink}> <img src={props.poster} alt=" " target="blank"/> </a>
+       <a href={props.knowMoreLink}> <img src={props.poster} alt=" " target="_blank"/> </a>
         <div className="card-content">
           <p className="card-title">{props.name}</p>
-          <a className="button" href={props.knowMoreLink} target="blank">
+          <a className="button" href={props.knowMoreLink} target="_blank">
             LinkedIn
           </a>
         </div>
