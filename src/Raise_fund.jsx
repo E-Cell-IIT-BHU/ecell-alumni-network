@@ -11,7 +11,7 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import "./css/form.scss";
-function Raise_funds() {
+function Raise_fund() {
   const [formDetails, setFormDetails] = useState({
     email: "",
     founderName: "",
@@ -436,4 +436,4 @@ function Raise_funds() {
   );
 }
 
-export default Raise_funds;
+export default Raise_fund;
