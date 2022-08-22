@@ -212,10 +212,10 @@ img {
   .card-content p{
     position: absolute;
     bottom: -25px;
-    font-size: 10px;
+    font-size: 9px;
     left: 10px;
     background: rgba(9, 36, 49, 0.7);
-    display: inline-block;
+   display: inline-block;
     
   }
 }
