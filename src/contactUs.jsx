@@ -7,7 +7,7 @@ function ContactUs(params) {
       <section className="" style={{ marginTop: "6%" }}>
         <div id="cnt">
         </div>
-        <h2
+        <h2 className="contact-us"
           style={{
             textDecoration: "underline",
             textDecorationThickness: "2px",
