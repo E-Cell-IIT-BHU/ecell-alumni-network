@@ -18,14 +18,17 @@ import {
   onValue,
 } from "firebase/database";
 
+
 function Team(params) {
   const [eventsList, setEvalList] = useState([]);
+  const [eventsInvList, setInvList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
     onValue(
       ref(db, `evalteam/`),
+      
       (snapshot) => {
         if (snapshot.exists()) {
           let events = Object.entries(snapshot.val());
@@ -34,10 +37,32 @@ function Team(params) {
             return { id: event[0], ...event[1] };
           });
           setEvalList(events);
-          console.log(eventsList);
+          // console.log(eventsList);
         } else {
           console.log("No data available");
           setEvalList([]);
+        }
+        // setIsloading(false);
+      },
+      (error) => console.log(error)
+    );
+  }, [isLoading]);
+  useEffect(() => {
+    onValue(
+      ref(db, `invteam/`),
+      
+      (snapshot) => {
+        if (snapshot.exists()) {
+          let events = Object.entries(snapshot.val());
+          console.log(Object.entries(snapshot.val()));
+          events = events.map((event) => {
+            return { id: event[0], ...event[1] };
+          });
+          setInvList(events);
+          // console.log(eventsInvList);
+        } else {
+          console.log("No data available");
+          setInvList([]);
         }
         // setIsloading(false);
       },
@@ -100,7 +125,7 @@ function Team(params) {
               margin: "2% 0",
             }}
           >
-            Evaluation Team
+            Advisory Board
           </h2>
           <div className="sub-grid-container">
             {/* <GridItem name="Aditya Talwar"/>
@@ -118,6 +143,23 @@ function Team(params) {
               <GridItem key={event.id} {...event} />
             ))}
           </div>
+          <h2
+            style={{
+              textDecoration: "underline",
+              textDecorationThickness: "2px",
+              margin: "2% 0",
+            }}
+          >
+            Investor Pool
+            
+          </h2>
+          {/* <Griditem name = "chetan">
+            */}
+            <div className="sub-grid-container">
+            {eventsInvList.map((event, _id) => (
+              <GridItem key={event.id} {...event} />
+            ))}
+            </div>
         </div>
       </div>
     </>
