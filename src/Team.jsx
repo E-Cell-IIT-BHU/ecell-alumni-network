@@ -117,6 +117,11 @@ function Team(params) {
               knowMoreLink="https://www.linkedin.com/in/sparsh-agrawal17/"
               poster={sparsh}
             />
+            <GridItemI
+              name="Tanaya Mujumdar"
+              knowMoreLink="https://www.linkedin.com/in/tanaya-mujumdar-80aa17207"
+              poster='https://www.ecelliitbhu.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fteam%2F2022-2023%2FTanaya.7a503c78fb088b376de3e2ef6124ea39.jpg&w=1920&q=75'
+            />
           </div>
           <h2
             style={{
