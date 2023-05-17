@@ -3,8 +3,8 @@ import "./App.css";
 // import "../images";
 import nishant from "./nishant_shukla.png";
 import amit from "./amit_kr_baheti.png";
-import akshay from "./akshay_akash.png";
-import sparsh from "./sparsh_agarwal.png";
+import parth from "./Parth.png";
+import ashwat from "./Ashwat.png";
 import GridItem from "./gridItem";
 import GridItemI from "./gridItem1";
 import { firebaseDB as db } from "./lib/firebase";
@@ -108,14 +108,14 @@ function Team(params) {
               poster={amit}
             />
             <GridItemI
-              name="Akshay Akash"
-              knowMoreLink="https://www.linkedin.com/in/akshay-akash/"
-              poster={akshay}
+              name="Parth Gupta"
+              knowMoreLink="https://www.linkedin.com/in/parthgupta03/"
+              poster={parth}
             />
             <GridItemI
-              name="Sparsh Agarwal"
-              knowMoreLink="https://www.linkedin.com/in/sparsh-agrawal17/"
-              poster={sparsh}
+              name="Ashwat Kr Singh"
+              knowMoreLink="https://www.linkedin.com/in/ashwat-singh/"
+              poster={ashwat}
             />
             <GridItemI
               name="Tanaya Mujumdar"

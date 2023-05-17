@@ -1,8 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 import "./css/form.scss"
-import { ref, set } from "firebase/database";
+import { ref, set, onValue } from "firebase/database";
 import {firebaseDB} from "./lib/firebase";
 import ContactUs from "./contactUs";
 const FundingInitiative = () => {
@@ -17,6 +17,32 @@ const FundingInitiative = () => {
     NRE_NRO_account: "",
   });
 
+  const [totalAmount, setTotalAmount] = useState(0);
+  const [investorCount, setInvestorCount] = useState(0);
+  useEffect(() => {
+    const db = firebaseDB;
+    const amountRef = ref(db, 'alumniNetwork/totalAmount2');
+    const investorsRef = ref(db, 'alumniNetwork/investors2');
+    
+    // Listen for changes to the total amount
+    onValue(amountRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        setTotalAmount(data);
+      }
+    });
+
+    // Listen for changes to the number of investors
+    onValue(investorsRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        setInvestorCount(data);
+      }
+    });
+  }, []);
+
+
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) =>
@@ -24,7 +50,9 @@ const FundingInitiative = () => {
     e.preventDefault();
     setIsSubmitting(true);
     const db = firebaseDB;
-    set(
+    const amount = parseInt(formDetails.amount, 10);
+    if(amount){
+      set(
       ref(
         db,
         `alumniNetwork/fundingInitiativeForAlumni/${
@@ -54,7 +82,12 @@ const FundingInitiative = () => {
         });
         alert("Form submitted successfully");
       })
-      .catch((error) => alert(error.message));
+      .catch((error) => {alert(error.message);
+      });
+      set(ref(db, 'alumniNetwork/totalAmount2'), totalAmount + amount);
+           // Increment the investor count
+      set(ref(db, 'alumniNetwork/investors2'), investorCount + 1);
+    }
 
   }
   
@@ -208,6 +241,15 @@ const FundingInitiative = () => {
             <span> Over 20L</span>
           </Row>
         </Row>
+        {/* <Row>
+        <input
+          type="text"
+          value={formDetails.amount}
+          onChange={(e) => setFormDetails({ ...formDetails, amount: e.target.value })}
+          placeholder="Amount"
+          required
+        />
+        </Row> */}
         <Row
           className="form-item"
           onChange={(e) =>
