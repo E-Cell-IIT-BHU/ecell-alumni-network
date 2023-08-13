@@ -3,8 +3,8 @@ import "./App.css";
 // import "../images";
 import nishant from "./nishant_shukla.png";
 import amit from "./amit_kr_baheti.png";
-import akshay from "./akshay_akash.png";
-import sparsh from "./sparsh_agarwal.png";
+import parth from "./parth.jpeg";
+import Vanshika from "./Vanshika.jpg";
 import GridItem from "./gridItem";
 import GridItemI from "./gridItem1";
 import { firebaseDB as db } from "./lib/firebase";
@@ -108,14 +108,14 @@ function Team(params) {
               poster={amit}
             />
             <GridItemI
-              name="Akshay Akash"
-              knowMoreLink="https://www.linkedin.com/in/akshay-akash/"
-              poster={akshay}
+              name="Parth Gupta"
+              knowMoreLink="https://www.linkedin.com/in/parthgupta03/"
+              poster={parth}
             />
             <GridItemI
-              name="Sparsh Agarwal"
-              knowMoreLink="https://www.linkedin.com/in/sparsh-agrawal17/"
-              poster={sparsh}
+              name="Vanshika Gupta"
+              knowMoreLink="https://www.linkedin.com/in/vanshikagupta13/"
+              poster={Vanshika}
             />
             <GridItemI
               name="Tanaya Mujumdar"
@@ -148,7 +148,7 @@ function Team(params) {
               <GridItem key={event.id} {...event} />
             ))}
           </div>
-          <h2
+          {/* <h2
             style={{
               textDecoration: "underline",
               textDecorationThickness: "2px",
@@ -158,13 +158,13 @@ function Team(params) {
             Investor Pool
             
           </h2>
-          {/* <Griditem name = "chetan">
-            */}
+          <Griditem name = "chetan">
+           
             <div className="sub-grid-container">
             {eventsInvList.map((event, _id) => (
               <GridItem key={event.id} {...event} />
             ))}
-            </div>
+            </div> */}
         </div>
       </div>
     </>
